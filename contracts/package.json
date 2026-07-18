@@ -1,0 +1,25 @@
+{
+  "name": "kaspa-dex-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Solidity AMM + bot registry for Kaspa EVM L2s (Igra / Kasplex)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js",
+    "deploy:galleon": "hardhat run scripts/deploy.js --network galleon",
+    "deploy:kasplexTest": "hardhat run scripts/deploy.js --network kasplexTest"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.2",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.26.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}
